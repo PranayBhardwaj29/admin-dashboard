@@ -23,6 +23,8 @@ body {
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
+  height: 16px;
+  width: 16px;
 }
 
 input, button, textarea, select {
@@ -42,4 +44,33 @@ h1, h2, h3, h4, h5, h6 {
 
 #root, #__next {
   isolation: isolate;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+
+  grid-template-areas: 
+  "left-side top-side    top-side    top-side    top-side"
+  "left-side middle middle middle right-side";
+
+}
+
+.left-side {
+  background-color: #1992d4;
+  color: white;
+  grid-area: left-side;
+}
+
+.top-side {
+  grid-area: top-side;
+}
+
+.middle {
+  grid-area: middle;
+}
+
+.right-side {
+  grid-area: right-side;
 }
