@@ -251,4 +251,42 @@ button {
 
 .middle {
   grid-area: middle;
+  padding: 16px;
+}
+
+.project-heading {
+  font-weight: bold;
+  font-size: 24px;
+  padding: 16px 16px 8px 16px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 16px;
+}
+
+.single-project {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  border-left: rgb(17, 236, 31) solid 8px;
+}
+
+.rxn-of-project {
+  display: flex;
+  justify-content: right;
+}
+
+.heading-of-project {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 8px;
+}
+
+.project-description {
+  font-size: 12px;
+  padding-left: 8px;
+  padding-bottom: 8px;
 }
