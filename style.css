@@ -15,6 +15,7 @@
 }
 
 body {
+  background-color: #333333;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: "Roboto", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -23,6 +24,8 @@ body {
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
+  width: 24px;
+  height: 24px;
 }
 
 input, button, textarea, select {
@@ -86,9 +89,118 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 36px;
 }
 
+.left-side > .dashboard > img{
+  width: 36px;
+  height: 36px;
+}
+
+.left-side > .dashboard {
+  padding-bottom: 36px;
+}
+
+/* Left side is done now! */
+
+.top-top {
+  display: flex;
+  justify-content: space-between;
+}
+
 .top-side {
   grid-area: top-side;
+  background-color: white;
+  padding: 16px;
 }
+
+.top-top img {
+  width: 36px;
+  height: 36px;
+}
+
+.name {
+  font-size: larger;
+}
+
+.search-container {
+  position: relative;
+  width: 100%;       
+  max-width: 700px;
+  display: flex;
+}
+
+.top-top-right, .account {
+  display: flex;
+  gap: 16px;
+  padding-bottom: 16px;
+}
+
+.search-input {
+  width: 100%;
+  height: 36px;        
+  font-size: 16px;            
+  color: #333333;             
+  background-color: #f0f0f0;  
+  border: 1px solid #dcdcdc;  
+  border-radius: 50px;        
+  box-sizing: border-box;     
+  outline: none;              
+  transition: all 0.3s ease;  
+}
+
+.top-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+button {
+  color: white;
+  background-color: #1992d4;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 24px;
+  border: #1992d4;
+}
+
+.user {
+  display: flex;
+}
+
+.user img {
+  width: 60px;
+  height: 60px;
+}
+
+.user-img {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+/* Top side done! */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .middle {
   grid-area: middle;
