@@ -1,6 +1,7 @@
 # Admin Dashboard
 https://pranaybhardwaj29.github.io/admin-dashboard/
-A simple admin dashboard built with HTML and CSS. The page includes a sidebar, top navigation, project cards, announcements, and trending sections.
+
+- A simple admin dashboard built with HTML and CSS. The page includes a sidebar, top navigation, project cards, announcements, and trending sections.
 
 ## Features
 - Responsive dashboard layout
